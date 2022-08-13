@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayTM</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                paytm: {
+                    blue: '#49baf2',
+                    bluedark: '#f4a8afe',
+                    button: {
+                        bluedark: '#02970fe',
+                        blue: '#49baf2'
+                    }
+                }
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    
+    <!-- navbar -->
+    <nav class="flex justify-between items-center shadow-lg px-12 py-4">
+        <img src="./assets/paytm_logo.png" alt="paytm logo" class="h-14">
+        <div class="space-x-4">
+            <a href="#" class="hover:text-paytm-blue">Paytm for Consumer</a>
+            <a href="#" class="hover:text-paytm-blue">Paytm for Business</a>
+            <a href="#" class="hover:text-paytm-blue">Company</a>
+            <a href="#" class="hover:text-paytm-blue">Investor Relations</a>
+            <a href="#" class="hover:text-paytm-blue">Career</a>
+        </div>
+        <button class="rounded-full bg-paytm-button-blue flex space-x-2 text-white items-center pl-4">
+            Sign in <img src="./assets/user_avatar_circle.svg" alt="user_avatar" class="w-10 ml-2">
+        </button>
+    </nav>
+    <!-- navbar -->
+
+</body>
+</html>
